@@ -10,9 +10,9 @@ antall_personer = st.slider("Velg antall personer", 1, 20, 4)
 
 # Enkle beregninger per person (du kan justere tallene som du vil)
 ingredienser = {
-    "Kjøttdeig (g)": 150,
-    "Tacolefser (stk)": 3,
-    "Revet ost (g)": 40,
+    "Kjøttdeig (g)": 180,
+    "Tacolefser (stk)": 2,
+    "Revet ost (g)": 100,
     "Salat (g)": 30,
     "Tomat (g)": 30,
     "Agurk (g)": 20,
