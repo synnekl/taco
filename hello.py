@@ -13,13 +13,15 @@ ingredienser = {
     "Kjøttdeig (g)": 180,
     "Tacolefser (stk)": 2,
     "Revet ost (g)": 100,
-    "Salat (g)": 30,
-    "Tomat (g)": 30,
-    "Agurk (g)": 20,
-    "Mais (g)": 20,
-    "Rømme (ss)": 2,
-    "Salsa (ss)": 2,
-    "Guacamole (ss)": 2,
+    "Salat (g)": 50,
+    "Tomat (g)": 50,
+    "Agurk (g)": 50,
+    "Mais (g)": 50,
+    "Paprika (g)": 50,
+    "Løk (g)": 50,
+    "Rømme (bok)": 1/3,
+    "Salsa (glass)": 1/3,
+    "Avocado (stk)": 1,
 }
 
 # Kalkuler totaler
@@ -29,3 +31,4 @@ beregnet = {ing: mengde * antall_personer for ing, mengde in ingredienser.items(
 df = pd.DataFrame.from_dict(beregnet, orient="index", columns=["Mengde totalt"])
 st.subheader("Handleliste")
 st.write(df)
+st.write("Pris per pers på fellesen: ca 10 kr. ")
